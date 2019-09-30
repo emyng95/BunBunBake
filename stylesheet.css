@@ -1,0 +1,435 @@
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Gloria+Hallelujah|Patrick+Hand+SC&display=swap');
+
+:root {
+    --main-bg-color:white;
+    --main-font-color:#3C1B0A;
+    --main-font-color-light1:rgba(60, 27, 10, 0.253);
+    --secondary-font-color:#3C1B0A;
+    --tertiary-font-color:white;
+    --main-font-name:Gloria Hallelujah;
+
+    --secondary-font-name:Patrick Hand SC;
+    --hover-button-color:#FFE194;
+    --hover-font-color:white;
+}
+
+
+/* --- static content ---- */
+
+.nav-button{
+    padding-right: 1rem;
+    padding-left:2.5rem;
+}
+
+.button{
+    border-radius: 5px; 
+}
+
+a.nav-link{
+    padding: 1.6rem 1rem; /*basically setting the up down padding only because the left right padding is set with media querey for laptop*/
+}
+
+
+.navbar-nav{
+    align-items:center;
+}
+
+.nav-link{
+    font-family: var(--main-font-name);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#title{
+    padding: 1.5rem 2.5rem;
+    /* this is for logo */
+}
+
+#home-nav{
+    padding-left:5rem; 
+}
+/* --- nav content by pages ---- */
+
+
+#home{
+    background: url('./asset/background_home_2.jpg') no-repeat center;
+    background-size: 140%;
+    background-position: center; /* look into this */
+    height: 800px;
+    overflow: hidden;
+}
+
+nav.trans-nav{
+    background: linear-gradient(rgba(0, 0, 0, 0.719),rgba(0, 0, 0, 0.411),rgba(0, 0, 0, 0.0));
+}
+
+.trans-nav a.nav-link{
+    color: white;
+}
+
+.white-nav a.nav-link{
+    color:var(--main-font-color);
+}
+
+.trans-nav #nav-button span{
+    padding-right: 1.2rem;
+    padding-left:1.2rem;
+    border: 2px solid #FFFFFF; 
+    color: var(--main-bg-color);
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.25);
+    
+}
+
+.trans-nav #nav-button span:hover{
+    border: 2px solid var(--hover-button-color); 
+    background-color: var(--hover-button-color);
+    color: var(--main-font-color);
+    box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.363);
+}
+
+.white-nav #nav-button span{
+    padding-right: 1.2rem;
+    padding-left:1.2rem;
+    border: 1px solid var(--main-font-color-light1); 
+    color: var(--main-font-color);
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0);
+    
+}
+
+
+
+
+/* --- body content by pages ---- */
+
+.flex-content{
+    display: flex;
+    justify-content: center;
+}
+
+#homebon{
+    position: relative;
+    top:20;
+    left: -100;
+    transform: rotate(-10.72deg);
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5)); 
+    filter: drop-shadow(10px 10px 8px rgba(0,0,0,0.5)) contrast(1.2);
+    z-index: 1;
+    width: auto;
+}
+
+.floating-text{
+    position: relative;
+    font-family: var(--secondary-font-name);
+    font-size: 1.8em;
+    letter-spacing: 1.3;
+    line-height: 1.13;
+    text-align: center;
+    color:var(--hover-button-color);
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.808)); 
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.678));
+}
+
+#headline-1{
+    position:relative;
+    width: 600px;
+    top: 100px;
+    left:160px;
+    transform: rotate(-8.72deg);
+    z-index: 12;
+
+}
+
+
+#headline-2{
+    position:relative;
+    top: 220px;
+    right: 180px;
+    width: 400px;
+    transform: rotate(15.72deg);
+}
+
+
+div p {
+    position: relative;
+    color:var(--tertiary-font-color);
+    font-family: var(--main-font-name);
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#tp-info{
+    top: -660px;
+    left:850px;
+    width: 120px;
+    transform: rotate(8.72deg);
+}
+
+#tp-arrow{
+    position: relative;
+    top: -660px;
+    left:850px;
+}
+
+#md-info{
+    width: 200px;
+    top: -390px;
+    left:240px;
+    z-index: 13;
+    transform: rotate(15.72deg);
+}
+
+#md-arrow{
+    position: relative;
+    top: -520px;
+    left:420px;
+    z-index: 13;
+}
+
+#btm-info{
+    font-size: 1.4em;
+    top: -580px;
+    left:980px;
+    width: 160px;
+    z-index: 13;
+}
+
+#btm-arrow{
+    position: relative;
+    transform: rotate(-32.72deg);
+    top: -680px;
+    left:850px;
+    z-index: 13;
+}
+
+div.flex-content.explore{
+    position: relative;
+    top: -12%;
+}
+
+
+#explore-button{
+    position: relative;
+    border-radius:5px;
+    padding: 0.6rem 1.2rem;
+    font-family: var(--main-font-name);
+    font-size: 20px;
+    color: var(--main-font-color);
+    z-index: 13;
+    background-color: var(--main-bg-color);
+    
+}
+
+
+#explore-button:hover{
+    font-family: var(--main-font-name);
+    color: var(--main-font-color);
+    background-color: var(--hover-button-color);
+    text-decoration: none;
+    box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.363);
+}
+
+
+.text-align-center{
+    text-align: center;
+}
+
+/********* Shop html ***********/
+
+#product-catalog h1{
+    font-family: var(--main-font-name);
+    font-size: 1.8em;
+    padding: 3.5rem 0;
+    color:rgb(255, 110, 78);
+}
+
+
+
+#catalog{
+    margin: 0 auto;
+    display: grid;
+    width: 1072px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 2fr 1.5fr);
+    grid-column-gap:56px;
+    grid-row-gap:0px;
+    grid-template-areas: 
+        "content1 content2 content3"
+        "info1 info2 info3"
+}
+
+#catalog a{
+    text-decoration: none;
+}
+
+#catalog h2:hover{
+    -webkit-filter: drop-shadow(6px 6px 5px  #FFE194 ); 
+    filter: drop-shadow(6px 6px 5px rgb(250, 210, 108) );
+}
+
+#catalog img:hover{
+    -webkit-filter: drop-shadow(6px 6px 5px  #FFE194 ); 
+    filter: drop-shadow(0px 0px 8px rgb(247, 212, 124) );
+}
+
+#catalog h2{
+    position: relative;
+    font-family: var(--main-font-name);
+    font-size: 1.4em;
+    color:rgb(255, 110, 78);
+    left:50px;
+}
+
+#catalog h3{
+    position: relative;
+    font-family: var(--main-font-name);
+    font-size: 1.2em;
+    line-height: 1.4;
+    color:var(--main-font-color);
+    left:50px;
+}
+
+#catalog h5{
+    position: relative;
+    font-family: var(--secondary-font-name);
+    font-size: 1rem;
+    color:rgba(60, 27, 10, 0.253);
+    left:50px;
+    margin: 0;
+}
+
+
+#catalog .form-control{
+    margin-top:2px;
+    margin-bottom:8px;
+    display: inline-block;
+    position: relative;
+    font-family: var(--main-font-name);
+    line-height: 1.5;
+    color:var(--main-font-color);
+    left:50px;
+    width:140px;
+    
+    box-shadow: 0px 1px 4px 0px #ced4da;
+}
+
+#catalog .form-control:hover{
+    box-shadow: 0px 0px 2px 2px var(--hover-button-color);
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+#catalog .form-control.quant{
+    width: 80px;
+
+}
+
+
+#catalog .add{
+    margin-top:2px;
+    display: block;
+    position: relative;
+    font-family: var(--main-font-name);
+    font-size: 1em;
+    padding:.35rem .75rem;
+    color:var(--main-font-color);
+    border-radius: 5px;
+    left:50px;
+    border: 1px solid #ced4da; 
+    box-shadow: 0px 1px 4px 0px #ced4da;
+    width: 222px;
+}
+
+#catalog .add:hover{
+    background-color:var(--hover-button-color);
+    color:var(--main-font-color);
+    border-radius: 5px;
+    left:50px;
+    border: 0px solid #ced4da; 
+    box-shadow: 0px 3px 8px 0px #ced4da;
+    width: 222px;
+}
+
+
+
+
+#catalog img{
+    width:320px;
+}
+
+#content-1{
+    grid-area: content1;
+}
+
+#content-2{
+    grid-area:content2;
+}
+
+#content-3{
+    grid-area:content3;
+}
+
+#content-4{
+    grid-area:content4;
+}
+
+#content-5{
+    grid-area:content5;
+}
+
+#content-6{
+    grid-area:content6;
+}
+
+/********* Signature Bun html ***********/
+
+#product-detail-layout{
+    margin: 6rem auto;
+    display: grid;
+    width: 960px;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: 320px 120px;
+    grid-column-gap:56px;
+    grid-row-gap:30px;
+    grid-template-areas: 
+        "product-image product-info"
+        "product-image-indicators subtotal"
+}
+
+
+#product-image{
+    grid-area: product-image;
+}
+
+#product-image-indicators{
+    grid-area: product-image-indicators;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#product-image-indicators .small-img{
+    width: 32%;
+}
+
+
+#product-info{
+    grid: product-info;
+}
+
+
+@media (min-width: 576px){
+    .navbar-expand-sm .navbar-nav a.nav-link {
+        padding-right:2.5rem;
+        padding-left:2.5rem;
+    }
+
+    #nav-button{
+        padding-right:0rem;
+        padding-left:2rem;
+    }
+}
