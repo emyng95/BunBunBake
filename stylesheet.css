@@ -47,17 +47,14 @@ a.nav-link{
     /* this is for logo */
 }
 
-#home-nav{
-    padding-left:5rem; 
-}
 /* --- nav content by pages ---- */
 
 
 #home{
     background: url('./asset/background_home_2.jpg') no-repeat center;
     background-size: 140%;
-    background-position: center; /* look into this */
-    height: 800px;
+    background-position: top; /* look into this */
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -95,7 +92,7 @@ nav.trans-nav{
     border: 1px solid var(--main-font-color-light1); 
     color: var(--main-font-color);
     background-color: var(--main-bg-color);
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0);
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.075);
     
 }
 
@@ -219,6 +216,8 @@ div.flex-content.explore{
     color: var(--main-font-color);
     z-index: 13;
     background-color: var(--main-bg-color);
+
+    box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.25);
     
 }
 
@@ -275,28 +274,25 @@ div.flex-content.explore{
 }
 
 #catalog h2{
-    position: relative;
     font-family: var(--main-font-name);
     font-size: 1.4em;
     color:rgb(255, 110, 78);
-    left:50px;
+    /* left:50px; */
 }
 
 #catalog h3{
-    position: relative;
     font-family: var(--main-font-name);
     font-size: 1.2em;
     line-height: 1.4;
     color:var(--main-font-color);
-    left:50px;
+    /* left:50px; */
 }
 
 #catalog h5{
-    position: relative;
     font-family: var(--secondary-font-name);
     font-size: 1rem;
-    color:rgba(60, 27, 10, 0.253);
-    left:50px;
+    color:rgba(60, 27, 10, 0.452);
+    /* left:50px; */
     margin: 0;
 }
 
@@ -305,11 +301,10 @@ div.flex-content.explore{
     margin-top:2px;
     margin-bottom:8px;
     display: inline-block;
-    position: relative;
     font-family: var(--main-font-name);
     line-height: 1.5;
     color:var(--main-font-color);
-    left:50px;
+    /* left:50px; */
     width:140px;
     
     box-shadow: 0px 1px 4px 0px #ced4da;
@@ -332,13 +327,12 @@ div.flex-content.explore{
 #catalog .add{
     margin-top:2px;
     display: block;
-    position: relative;
     font-family: var(--main-font-name);
     font-size: 1em;
     padding:.35rem .75rem;
     color:var(--main-font-color);
     border-radius: 5px;
-    left:50px;
+    /* left:50px; */
     border: 1px solid #ced4da; 
     box-shadow: 0px 1px 4px 0px #ced4da;
     width: 222px;
@@ -348,7 +342,7 @@ div.flex-content.explore{
     background-color:var(--hover-button-color);
     color:var(--main-font-color);
     border-radius: 5px;
-    left:50px;
+    /* left:50px; */
     border: 0px solid #ced4da; 
     box-shadow: 0px 3px 8px 0px #ced4da;
     width: 222px;
@@ -373,26 +367,31 @@ div.flex-content.explore{
     grid-area:content3;
 }
 
-#content-4{
-    grid-area:content4;
+#info-1{
+    grid-area: info1;
+    position: relative;
+    left: 40px;
 }
 
-#content-5{
-    grid-area:content5;
+#info-2{
+    grid-area: info2;
+    position: relative;
+    left: 40px;
 }
 
-#content-6{
-    grid-area:content6;
+#info-3{
+    grid-area: info3;
+    position: relative;
+    left: 40px;
 }
-
 /********* Signature Bun html ***********/
 
-#product-detail-layout{
+.product-detail-layout{
     margin: 6rem auto;
     display: grid;
-    width: 960px;
+    width:960px;
     grid-template-columns: 4fr 5fr;
-    grid-template-rows: 320px 120px;
+    grid-template-rows: 360px 120px;
     grid-column-gap:56px;
     grid-row-gap:30px;
     grid-template-areas: 
@@ -401,26 +400,141 @@ div.flex-content.explore{
 }
 
 
-#product-image{
+.product-image{
     grid-area: product-image;
+    /* background-image: url('./asset/product-detail-img-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center; */
 }
 
-#product-image-indicators{
+.product-image .carousel-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+
+}
+
+
+.product-image .carousel-indicator .circle{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: var(--main-font-color-light1);
+    border-radius: 6px;
+    margin: 0 1rem 0 0 ;
+
+}
+
+.product-image-indicators{
     grid-area: product-image-indicators;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-#product-image-indicators .small-img{
-    width: 32%;
+.product-image-indicators .small-img{
+    width: 30%;
 }
 
 
-#product-info{
-    grid: product-info;
+.product-info{
+    grid-area: product-info;
 }
 
+.product-description{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between
+}
+
+.product-description h1{
+    font-family: var(--main-font-name);
+    font-size: 1.8em;
+    color:rgb(255, 110, 78);
+    margin: 0 0 1.2rem 0 ;
+    
+}
+
+.product-description h2{
+    font-family: var(--main-font-name);
+    font-size: 1.4em;
+    color:var(--main-font-color);
+    margin: 0 0 1.5rem 0 ;
+}
+
+.product-description p{
+    text-align: left;
+    font-family: var(--main-font-name);
+    font-size: 0.95em;
+    color:var(--main-font-color);
+}
+
+.product-selection{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.product-selection h5{
+    font-family: var(--secondary-font-name);
+    font-size: 1.2rem;
+    color:rgba(60, 27, 10, 0.452);
+    margin: 0;
+    flex-basis: 100%; 
+    /* this is the reason why it can stand alone */
+    
+}
+
+.product-selection ul{
+    text-align: center;
+    padding: 0;
+    margin: 0; 
+    list-style-type: none;  
+}
+
+.product-selection li{
+
+    font-family: var(--secondary-font-name);
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid var(--main-font-color-light1); 
+    border-radius: 5px;
+    padding: 1rem 0 1rem 0; 
+    margin: 0.24rem 0.6rem 1rem 0;
+    box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.18);
+    width: 4.6vw;
+    color: var(--main-font-color)
+}
+
+.product-selection li.flavors{
+    width: 6.8vw;
+}
+
+
+.subtotal h3{
+    font-family: var(--main-font-name);
+    font-size: 1.2rem;
+    color:var(--main-font-color);
+    margin: 0.8rem 0 0.5rem 0 ;
+}
+
+
+.subtotal button{
+    font-family: var(--main-font-name);
+    font-size: 1rem;
+    background-color: white; 
+    padding:1rem 3rem;
+    color:var(--main-font-color);
+    border-radius: 5px;
+    border: 1px solid #ced4da; 
+    box-shadow: 0px 1px 4px 0px #ced4da;
+}
+
+.subtotal button, .product-selection li, .product-image-indicators img{
+    cursor: pointer;
+}
 
 @media (min-width: 576px){
     .navbar-expand-sm .navbar-nav a.nav-link {

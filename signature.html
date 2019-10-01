@@ -7,6 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Bun Bun Bake</title>
+
         <meta name="description" content="This is a prototype of Bun Bun Bake's online platform">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./stylesheet.css">
@@ -43,18 +44,54 @@
             </nav>
         </div>
 
-        <div id="product-detail-layout">
-            <div id="product-image">
-                <img src="./asset/product-detail-img-1.jpg">
+        <div class="product-detail-layout">
+            <div class="product-image">
+                <img id="main-img" src="./asset/product-detail-img-1.jpg">
+                <div class="carousel-indicator">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
             </div>
 
-            <div id="product-image-indicators">
+            <div class="product-image-indicators">
                 <img class="small-img" src="./asset/product-detail-img-1.jpg">
                 <img class="small-img" src="./asset/product-detail-img-2.jpg">
                 <img class="small-img" src="./asset/product-detail-img-3.jpg">
             </div>
 
             <div id="product-info">
+                <div class="product-description">
+                    <h1 class="inline-block">Signature Original</h1>
+                    <h2 class="inline-block">$ 2.25 / Each</h2>
+                    <p>Tristique nunc habitant commodo velit. Morbi orci, volutpat eu ac aliquet fermentum, tellus pulvinar. Eu null am faucibus turpis dignissim. Neque dignissim neque, et odio vel elementum ac. Lectus tincidunt neque morbi ut ut. Pellentesque porttitor.</p>
+                </div>
+                <div class="product-selection">
+                    <h5>Quantity</h5>
+                    <ul>
+                        <li>1</li>
+                        <li>3</li>
+                        <li>6</li>
+                        <li>12</li>
+                    </ul>
+                </div>
+
+                <div class="product-selection">
+                    <h5>Flavor</h5>
+                    <ul>
+                        <li class="flavors">None</li>
+                        <li class="flavors">Vanilla Milk</li>
+                        <li class="flavors">Sugar Milk</li>
+                        <li class="flavors">Chocolate</li>
+                    </ul>
+                </div>
+
+                <div class="subtotal">
+                    <h3>Subtotal: $2.25</h3>
+                    <button> Add to cart </button>
+
+                </div>
+
 
             </div>
 
@@ -64,5 +101,8 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <script src="myscript.js"></script>
     </body>
 </html>
